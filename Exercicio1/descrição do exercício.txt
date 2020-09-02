@@ -1,0 +1,1 @@
+Se trata de um conjunto de exercícios tirado de um tutorial do YouTube (https://youtu.be/tZvjSl9dswg) para aprender os conceitos básicos do desenvolvimento Android com o uso da IDE Android Studio e da linguagem de programação Java.
