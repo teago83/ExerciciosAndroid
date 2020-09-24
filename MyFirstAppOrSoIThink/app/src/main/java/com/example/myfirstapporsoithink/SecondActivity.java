@@ -8,25 +8,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
-    private EditText InputNome;
+public class SecondActivity extends AppCompatActivity {
+    private EditText InputSobrenome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
 
-        InputNome = findViewById(R.id.YourName);
-        Button TransitionButton = (Button) findViewById(R.id.SecondScreenButton);
+        InputSobrenome = findViewById(R.id.YourLastName);
+        Button TransitionButton = (Button) findViewById(R.id.MainScreenButton);
         TransitionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v){
 
-                String nome = InputNome.getText().toString();
+                String sobrenome = InputSobrenome.getText().toString();
 
-                Intent IntentUe = new Intent(MainActivity.this, SecondActivity.class);
+                Intent IntentUe = new Intent(SecondActivity.this, MainActivity.class);
 
-                IntentUe.putExtra("Nome", nome);
+                IntentUe.putExtra("Sobrenome", sobrenome);
                 startActivity(IntentUe);
                 finish();
             }
