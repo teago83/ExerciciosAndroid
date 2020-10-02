@@ -1,0 +1,19 @@
+Begin by adding a permission for the app to use the Internet.
+After having referenced the Button and the TextView on the code itself, create an OnClickListener for the button and create
+a class for the fetched data, extending it from "AsyncTask".
+On the FetchData class, firstly, declare the 'doInBackground' function and the 'onPostExecute' function, too. The first one
+does stuff in the background (like picking up the URL with the JSON data), while the second one changes the UI in the app
+itself.
+Declare an URL object and assign the link to the JSON data to it. 
+After that, create an HttpURLConnection, an InputStream and a BufferedReader, as they're all necessary to connect the app
+to the URL and to read its data. 
+Finally, create a "ParsedData" string, where the parsed version of the data from the URL shall be stored and, basically, 
+you'll just need to create a JSONObject to get the JSON data's attributes and assign them to the ParsedData string and 
+you're done.
+
+========================================================================================================================
+
+You followed this tutorial to complete this assignment:
+https://www.youtube.com/watch?v=Vcn4OuV4Ixg
+
+*Note: This won't detail the whole process, but actually just the more important parts that you aren't familiarised with.
