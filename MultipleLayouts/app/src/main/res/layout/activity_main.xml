@@ -1,31 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="279dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/masterofpuppets_foreground" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:layout_gravity="top"
+        android:src="@mipmap/hallowedbethyname_foreground" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtvw1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345" />
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:background="#4C374A"
+        android:padding="10dp"
+        android:text="Master of Puppets - Metallica"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtvw2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="40dp"
+        android:background="#4C374A"
+        android:padding="10dp"
+        android:text="Hallowed be thy Name - Iron Maiden"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#4C374A"
+        android:text="Um Frame Layout com textos colocados por cima de imagens."
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"/>
+
 
     <Button
-        android:id="@+id/wryybutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wryyy"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:id="@+id/teladois"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:layout_gravity="bottom"
+        android:background="#123456"
+        android:text="aperte aqui para ir para a próxima tela e ver outro layout"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
