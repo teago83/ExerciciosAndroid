@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Category:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="129dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="131dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery" />
+
+    <TextView
+        android:id="@+id/nsfw"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/religious"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nsfw" />
+
+    <TextView
+        android:id="@+id/political"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/religious" />
+
+    <TextView
+        android:id="@+id/racist"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/political" />
+
+    <TextView
+        android:id="@+id/sexist"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/racist" />
+
+    <TextView
+        android:id="@+id/setup"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:text=""
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+    <TextView
+        android:id="@+id/delivery"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="28dp"
+        android:text=""
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="Type:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="Setup:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="Delivery:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="ID:"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="348dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="116dp"
+        android:text="Some 'true or false' questions"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Is it NSFW?"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Is it Religious?"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Is it Political?"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Is it Racist?"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Is it Sexist?"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
