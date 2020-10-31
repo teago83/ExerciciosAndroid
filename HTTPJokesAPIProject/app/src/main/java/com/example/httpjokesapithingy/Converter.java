@@ -1,5 +1,6 @@
 package com.example.httpjokesapithingy;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -26,6 +27,15 @@ public class Converter {
             Joke.SetSetup(JSONObject.getString("setup"));
             Joke.SetDelivery(JSONObject.getString("delivery"));
             Joke.SetId(JSONObject.getString("id"));
+
+
+
+            JSONObject Flags = JSONObject.getJSONObject("flags");
+            Joke.SetNsfw(Flags.getString("nsfw"));
+            Joke.SetReligious(Flags.getString("religious"));
+            Joke.SetPolitical(Flags.getString("political"));
+            Joke.SetRacist(Flags.getString("racist"));
+            Joke.SetSexist(Flags.getString("sexist"));
 
             return Joke;
 

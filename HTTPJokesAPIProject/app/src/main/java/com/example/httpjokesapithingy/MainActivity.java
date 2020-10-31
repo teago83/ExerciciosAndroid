@@ -70,6 +70,12 @@ public class MainActivity extends AppCompatActivity {
             Delivery.setText(Joke.GetDelivery().substring(0,1).toUpperCase()+Joke.GetDelivery().substring(1));
             Id.setText(Joke.GetId().substring(0,1).toUpperCase()+Joke.GetId().substring(1));
 
+            NSFW.setText(Joke.GetNsfw().substring(0,1).toUpperCase()+Joke.GetNsfw().substring(1));
+            Religious.setText(Joke.GetReligious().substring(0,1).toUpperCase()+Joke.GetReligious().substring(1));
+            Political.setText(Joke.GetPolitical().substring(0,1).toUpperCase()+Joke.GetPolitical().substring(1));
+            Racist.setText(Joke.GetRacist().substring(0,1).toUpperCase()+Joke.GetRacist().substring(1));
+            Sexist.setText(Joke.GetSexist().substring(0,1).toUpperCase()+Joke.GetSexist().substring(1));
+
             Load.dismiss();
         }
     }
